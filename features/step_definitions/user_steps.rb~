@@ -158,9 +158,7 @@ Then /^I should see a successful sign up message$/ do
 end
 
 Then /^I should see an invalid email message$/ do
-  within("#new_user") do 
-  	page.should have_content "Please enter a valid email address."
-  end
+  page.should have_content "Please enter a valid email address."
 end
 
 Then /^I should see a missing password message$/ do
